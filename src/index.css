@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    width: 100vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+:root{
+    --main-color: rgb(2 132 199);
+      --primary-color: rgb(51 65 85);;
+      --secondary-color: white;
+      --bg-color: #fff;
+      --hd-color: black;
+      --brown-color: brown;
+      --border-color:rgb(226 232 240);
+      --primary-bg-color: #fff;
+      --dark-grey-color: #ffffff;
+      --ts-skill:  rgb(15 23 42);
+      --ts-button: rgb(29 78 216);
+  
+  }
+  
+  [data-theme="light"]{
+      --main-color: rgb(2 132 199);
+        --primary-color: rgb(51 65 85);;
+        --secondary-color: white;
+        --bg-color: #fff;
+        --hd-color: black;
+        --brown-color: brown;
+        --border-color: rgb(226 232 240);
+        --primary-bg-color: #fff;
+        --dark-grey-color: #ffffff;
+        --ts-skill:  rgb(3 105 161);
+        --ts-button: rgb(2 132 199);
+  
+    }
+  [data-theme="dark"]{
+      --main-color: rgb(7, 136, 241);
+        --primary-color: #f1f1f1;
+        --secondary-color: #04021c;
+        --bg-color: #000;
+        --hd-color: #fff;
+        --brown-color: brown;
+        --border-color: rgb(30 41 59);
+        --primary-bg-color: #242424;
+        --dark-grey-color: #141414 ;
+        --ts-skill:  rgb(15 23 42);
+        --ts-button: rgb(29 78 216 / 0.7);
+  
+    }
+
+
+    input[type="text"],input[type="email"],textarea{
+      @apply focus:outline-none focus:ring-sky-400 focus:ring-0 border   focus:border-sky-400 !important;
+  }
+
+
+  .moving-element {
+    position: absolute; /* Absolute positioning within the div */
+    animation: bounce 2s ease-in-out infinite; /* Animation reference */
+  }
+  
+  .container-div {
+    position: relative; /* Needed for absolute positioning of child */
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-40px); } /* Adjust for bounce height */
+  }
+  
+
+
+
+

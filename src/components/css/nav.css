@@ -1,0 +1,19 @@
+
+#slide{
+    animation: anim .7s;
+    transition: ease-out;
+    position: relative;
+}
+
+.logo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes anim {
+    from{
+     width: 0%;
+    } 
+    to{
+     width: 100%;
+    }
+ }
