@@ -11,7 +11,7 @@ const projects = [
     description: "EllasTouch Makeover is a booking website and portfolio for a professional makeup artist. It allows clients to view the artist's work and easily book makeup services for events like parties, weddings, and photo shoots",
     technologies: ['React', 'Typescript', 'Tailwind CSS', 'Mongodb', 'Node.js', 'Express.js'],
     images: [ desktop_1 , desktop_2, desktop_3 ],
-    link: 'https://ellas-touch-makeover.netlify.app/'
+    link: 'https://ellastouch-makeover.vercel.app'
   }
 ];
 
