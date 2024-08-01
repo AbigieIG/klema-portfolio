@@ -8,5 +8,5 @@ export default defineConfig({
     outDir: 'dist'
   },
   assetsInclude: ["**/*.JPG", "**/*.PNG", "**/*.webp"],
-  base: "/",
+  base: "/klema-portfolio/"
 });
