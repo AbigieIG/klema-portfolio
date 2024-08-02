@@ -13,9 +13,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [moon, setMoon] = useState(false);
   const navs = [
-    { title: "home", link: "/" },
-    { title: "Project", link: "/project" },
-    { title: "Blog", link: "/blog" },
+    { title: "home", link: "/klema-portfolio" },
+    { title: "Project", link: "/klema-portfolio/project" },
+    { title: "Blog", link: "/klema-portfolio/blog" },
   ];
   const location = useLocation();
   const [active, setActive] = useState("/");

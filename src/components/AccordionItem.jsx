@@ -17,7 +17,7 @@ const AccordionItem = (props) => {
       style={{ transition: ".6s" }}
       className={
         showItem
-          ? "flex  px-5 flex-col h-[150px] relative  gap-5 p-1 cursor-pointer overflow-hidden"
+          ? "flex  px-5 flex-col h-[200px] relative  gap-5 p-1 cursor-pointer overflow-hidden"
           : "flex px-5 flex-col h-[30px] gap-5 p-1 relative  cursor-pointer overflow-hidden"
       }
       onClick={() => addShow(id)}
@@ -26,7 +26,7 @@ const AccordionItem = (props) => {
         {" "}
         {question}{" "}
       </h3>
-      <p> {answer} </p>
+      <p className="text-sm leading-6"> {answer} </p>
       <span className="absolute  text-xl right-5">{showItem ? "-" : "+"} </span>
     </div>
   );
