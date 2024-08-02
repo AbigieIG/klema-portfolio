@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import desktop_1 from "../assets/images/project/desktop1.png";
 import desktop_2 from "../assets/images/project/desktop2.png";
 import desktop_3 from "../assets/images/project/desktop3.png";
@@ -23,7 +23,7 @@ const ProjectPage = () => {
           <header className="text-left mb-6">
             <h1 className="text-xl font-bold text-[--main-color]">{project.title}</h1>
             <p className=" mt-2 text-sm">{project.description}</p>
-            <Link to={project.link} className="text-xs mt-3 text-[--main-color]">Visit the webiste</Link>
+            <a  target="_blank" href={project.link} className="text-xs mt-3 text-[--main-color]">Visit the webiste</a>
           </header>
 
           <section className="mb-6">
