@@ -11,14 +11,14 @@ import Page from "./components/Page";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/klema-portfolio">
         <Navbar />
 
         <Routes>
-          <Route path="/klema-portfolio/" element={<Home />} />
-          <Route path="/klema-portfolio/blog" element={<Blogs />} />
-          <Route path="/klema-portfolio/project" element={<Project />} />
-          <Route path={"/klema-portfolio/blog/page/:Id"} element={<Page />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/project" element={<Project />} />
+          <Route path={"/blog/page/:Id"} element={<Page />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
 
