@@ -24,11 +24,11 @@ const ProjectPage = () => {
     }
   };
 
-  // Auto-slide effect
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % projects[0].images.length);
-    }, 3000); // Slide every 3 seconds
+    }, 3000); 
 
     return () => clearTimeout(timer);
   }, [currentIndex]);
@@ -40,7 +40,7 @@ const ProjectPage = () => {
           <header className="text-left mb-6">
             <h1 className="text-xl font-bold text-[--main-color]">{project.title}</h1>
             <p className="mt-2 text-sm">{project.description}</p>
-            <a target="_blank" href={project.link} className="text-xs mt-3 text-[--main-color]">Visit the website</a>
+            <div className="mt-5"><a target="_blank" href={project.link} className="text-xs mt-3 underline text-[--main-color]">Visit the website</a></div>
           </header>
 
           <section className="mb-6">
