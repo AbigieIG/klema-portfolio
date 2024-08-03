@@ -11,7 +11,7 @@ import Page from "./components/Page";
 function App() {
   return (
     <div>
-      <BrowserRouter basename="/klema-portfolio">
+      <BrowserRouter basename="/klemadev">
         <Navbar />
 
         <Routes>
