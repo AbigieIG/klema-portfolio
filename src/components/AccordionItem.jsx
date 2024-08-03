@@ -17,7 +17,7 @@ const AccordionItem = (props) => {
       style={{ transition: ".6s" }}
       className={
         showItem
-          ? "flex  px-5 flex-col h-[200px] relative  gap-5 p-1 cursor-pointer overflow-hidden"
+          ? "flex  px-5 flex-col md:h-[210px] h-[300px] relative  gap-5 p-1 cursor-pointer overflow-hidden"
           : "flex px-5 flex-col h-[30px] gap-5 p-1 relative  cursor-pointer overflow-hidden"
       }
       onClick={() => addShow(id)}
