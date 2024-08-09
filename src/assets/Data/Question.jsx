@@ -12,7 +12,27 @@ const question = [
   {
     id: 3,
     question: "How to get in touch with me",
-    answer: "I'm always open to discussing new projects and opportunities. You can reach out to me via email at ugbonomi@gmail.com for inquiries or collaborations. Additionally, you can connect with me on WhatsApp or call me at 09015005789 for a more direct conversation. I'm available to answer any questions you may have and guide you through the process of creating a remarkable digital presence."
+    answer: (
+      <>
+        I'm always open to discussing new projects and opportunities. You can reach out to me via email at{" "}
+        <a
+          onClick={(e) => e.stopPropagation()}
+          className="text-blue-600"
+          href="mailto:klemadev@gmail.com"
+        >
+          klemadev@gmail.com
+        </a>{" "}
+        for inquiries or collaborations. Additionally, you can connect with me on WhatsApp or call me at{" "}
+        <a
+          className="text-blue-600"
+          onClick={(e) => e.stopPropagation()}
+          href="tel:+2349015005789"
+        >
+          +2349015005789
+        </a>{" "}
+        for a more direct conversation. I'm available to answer any questions you may have and guide you through the process of creating a remarkable digital presence.
+      </>
+    ),
   },
   {
     id: 4,
@@ -20,7 +40,5 @@ const question = [
     answer: "My pricing is flexible and depends on the specific requirements and complexity of your project. I offer competitive rates that reflect the quality and effort put into each project. To get an accurate quote, please reach out to me with details about what you need or the content of your site. I'll provide you with a personalized estimate and discuss the best approach to achieve your goals. You can also connect with me on social media for more insights into my work and pricing."
   },
 ];
-
-
 
 export default question;
